@@ -1,0 +1,23 @@
+
+Following are the way to access dir in Ubuntu
+/mnt/c/GitRepo/DotNetTest/WebAppDotNet/WebAppDotNet
+
+Following are docker Command
+docker build -t webappdotnet .
+docker run -d -p 8080:80 --name dotnetcoredocker webappdotnet
+
+Important Link
+https://docs.docker.com/desktop/windows/
+https://hub.docker.com/search?type=edition&offering=community
+https://subhankarsarkar.com/wsl2-for-containerised-dot-net-core-development-using-docker/
+https://phoenixnap.com/kb/docker-run-command-with-examples
+https://docs.docker.com/samples/dotnetcore/
+https://github.com/dotnet/dotnet-docker/tree/main/samples/aspnetapp
+
+Push image to Docker Hub
+https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker
+docker tag webappdotnet:latest viskuku/101tutorial:myfirstpush
+docker push viskuku/101tutorial:myfirstpush
+docker pull viskuku/101tutorial:myfirstpush
+
+
